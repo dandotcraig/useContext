@@ -2,13 +2,6 @@ import React, { useContext , useState } from 'react'
 
 const ThemeContext = React.createContext()
 const ThemeUpdate = React.createContext()
-// const darkTheme = useTheme()
-
-
-
-// export function themeData() {
-//     return useContext(themeStyle)
-// };
 
 export function useTheme() {
     return useContext(ThemeContext)
@@ -39,5 +32,4 @@ export function ThemeProvider({ children }) {
             </ThemeUpdate.Provider>
         </ThemeContext.Provider>
     )
-
 };
